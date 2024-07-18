@@ -13,9 +13,6 @@ font-family: "Special Elite", system-ui */
     text-decoration: none;/*Esto quita el subrayado de los enlaces*/
     color: white;
 }
-body {
-    background-color: black; /*TODO: Borrar cuando tengamos el fondo final*/
-}
 header {
     position: fixed;/*Esto hace eu el header se quede fijo en la parte superior*/
     right: 0;
@@ -52,6 +49,7 @@ header {
     font-size: 35px;
     z-index: 101;/*para que este sobre el header*/
     cursor: pointer;/*para que aparesca la manito cuando ponemos el mouse encima*/
+    display: none;
 }
 #menu-toggle{
     display: none;/*nunca quiero que se vea el checkbok*/
@@ -67,7 +65,7 @@ header {
     position: relative; /*para que sea relativo al contenedor(nos permite usar top, bottom, left, y right)*/
     display: grid; /*para que el hero se pueda dividir en 2 columnas*/
     grid-template-columns: 1fr 1fr; /*las 2 columnas*/
-    align-items: center; /*para alinearverticalmente el hero*/
+    align-items: center; /*para alinear verticalmente el hero*/
     gap: 2rem; /*haya espacio de 2 rem entre las 2 columnas*/
 }
 section{
@@ -236,8 +234,7 @@ section{
         display: block;
         margin: 7px 0;
     }
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    .navList.open{
         right: 0;
     }
-
 }
