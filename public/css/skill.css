@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    list-style: none; 
+    text-decoration: none;
+    color: white;
+}
+body{
+    backdrop-filter: blur(4px);;
+    background: linear-gradient(245.59deg, #b4b881 20%, #4aab5e 45%, #27057d 65%);
+}
+header{
+    display: flexbox;
+    background-color: transparent;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.logo{
+    position: static;
+    font-size: 30px;
+    font-weight: 580;
+    margin: 10px;
+    color: rgb(77, 103, 153);
+}
+
+.navList{
+    display:flex;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-evenly;
+}
+.navList li a:hover{
+    transition: all .5s ease;
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+.title{
+    font-family: "Special Elite", system-ui;
+    font-size: 50px;
+    line-height: 0.9;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(0, 0, 0);
+}
+.description{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    opacity: 0.7;
+}
+.hero{
+    display: contents;
+    margin: 60px;
+    padding: auto;
+}
+.font{
+    display: flex;
+    justify-content: space-between ;
+}
+.section{
+    display: flex;
+    align-items: flex-start;
+    font-weight: 900%;
+    color: black;
+}
+.skill{
+    display: grid;
+    justify-content: space-between;
+}
+.img{
+    width: 50px;
+}
+
+
+
+
+@media (max-width:992px){
+    .hero{
+        padding-top: 0;
+        margin: 90px;
+    }
+    .title{
+        margin: 20px;
+        font-size: 50%;
+    }
+    .navList{
+        display:flex;
+    }
+}
+
+@media(max-width: 768px){
+    .title{
+        font-size: 45px;
+    }
+    .description{
+        margin: 30px;
+    }
+    .hero{
+        display: flex;
+        height: 100%;
+        margin: 25px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .navList{
+        display: inline;
+    }
+    .section{
+        font-size: 20px;
+    }
+    .name{
+        font-size: 15px;
+    }
+}

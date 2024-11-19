@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    list-style: none; 
+    text-decoration: none;
+    color: white;
+}
+body{
+    backdrop-filter: blur(4px);;
+    background: linear-gradient(245.59deg, #b4b881 20%, #4aab5e 45%, #27057d 65%);
+}
+header{
+    display: flexbox;
+    background-color: transparent;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.logo{
+    position: static;
+    font-size: 30px;
+    font-weight: 580;
+    margin: 10px;
+    color: rgb(77, 103, 153);
+}
+
+.navList{
+    display:flex;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-evenly;
+}
+.navList li a:hover{
+    transition: all .5s ease;
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+.hero{ 
+    margin: 46px;
+    padding: 80px;
+    background-color: transparent;
+    text-align: center;
+}
+  
+.title{
+    font-size: 2rem;
+    color: #000000;
+  }
+  
+.hero ul{
+    list-style: none;
+    padding: 0;
+  }
+  
+.hero li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+.hero a:hover {
+    border-bottom: 5px solid rgb(255, 0, 0);
+    text-decoration: none;
+  }
+  
+.hero a:hover {
+    text-decoration: underline;
+  }
+  
+.footer-bottom{
+    margin-top: 20px;
+}
+
+
+@media (max-width:992px){
+    .hero{
+        padding: 10px;
+    }
+    .title{
+        font-size: 70%;
+    }
+    .navList{
+        display:flex;
+    }
+    .hero li{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px){
+    .projects{
+        text-align: center;
+        padding-top: 50px;
+    }
+    .hero{
+        display: grid;
+        height: 100%;
+    }
+    
+}

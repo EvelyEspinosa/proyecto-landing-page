@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    list-style: none; 
+    text-decoration: none;
+    color: white;
+}
+body{
+    backdrop-filter: blur(4px);;
+    background: linear-gradient(245.59deg, #b4b881 20%, #4aab5e 45%, #27057d 65%);
+}
+header{
+    display: flexbox;
+    background-color: transparent;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.logo{
+    position: static;
+    font-size: 30px;
+    font-weight: 580;
+    margin: 10px;
+    color: rgb(77, 103, 153);
+}
+
+.navList{
+    display:flex;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-evenly;
+}
+.navList li a:hover{
+    transition: all .5s ease;
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+.hero{ 
+    display:grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    margin: 20px;
+}
+
+.hero-text{
+    margin: 15px;
+}
+
+.hero-text h1{
+    font-family: "Special Elite", system-ui;
+    font-size: 65px;
+    line-height: 0.9;
+}
+
+.hero-text h4{
+    color:#fae900;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.hero-text p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.9;
+    opacity: 0.7;
+}
+.hero-text a{
+    width: 100px;
+    right: 800px;
+}
+.hero-img img{
+    width: 300px;
+    height: auto;
+    margin: 15px;
+}
+
+.icons{
+    display: block;
+    position: relative;
+    margin: 15px;
+    top: 45vh;
+    transform: translateY(-50%);
+}
+
+.icons a{
+    margin: 20px 0;
+    transition: all .5s ease;
+}
+
+.icons a:hover{
+    color: #424141;
+    transform: translateY(-5px);
+}
+
+@media (max-width:992px){
+    .hero{
+        grid-template-columns: min-content;
+    }
+    .hero-text{
+        padding-top: 0;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-text p{
+        font-size: 70%;
+    }
+    .icons{
+        display: none;
+    }
+    .navList{
+        display:flex;
+    }
+}
+
+@media(max-width: 768px){
+    .hero-text{
+        text-align: center;
+        padding-top: 50px;
+    }
+    .hero-img img{
+        margin: 0;
+    }
+    .hero{
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+    }
+}
