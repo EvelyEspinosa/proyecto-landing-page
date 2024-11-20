@@ -56,6 +56,7 @@ header{
     flex-direction: row;
     margin: 5px;
     padding: auto;
+    font-size: 25px;
     justify-content: space-around;
 }
 .section{
@@ -81,18 +82,25 @@ header{
         margin: 20px;
         font-size: 50%;
     }
+    .img{
+        width: 42px;
+    }
     .navList{
         display:flex;
+        margin: 5px;
+        font-size: 15px;
     }
 }
 
 @media(max-width: 768px){
     .title{
-        font-size: 45px;
+        font-size: 35px;
     }
-    .description{
-        margin: 30px;
-    }
+        .description{
+            font-size: 13px;
+            line-height: 1.2;
+            opacity: 0.7;
+            }
     .hero{
         display: flex;
         height: 100%;

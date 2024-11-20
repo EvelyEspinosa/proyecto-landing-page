@@ -97,6 +97,9 @@ header{
     .hero-img{
         text-align: center;
     }
+    .hero-text h1{
+        font-size: 250%;
+    }
     .hero-text p{
         font-size: 70%;
     }
@@ -105,6 +108,8 @@ header{
     }
     .navList{
         display:flex;
+        margin: 5px;
+        font-size: 15px;
     }
 }
 
