@@ -4,36 +4,55 @@
     font-family: "Inconsolata", monospace;
     list-style: none; 
     text-decoration: none;
-    color: white;
+    color: black;
 }
 body{
-    backdrop-filter: blur(4px);;
-    background: linear-gradient(245.59deg, #b4b881 20%, #4aab5e 45%, #27057d 65%);
+    background: linear-gradient(135deg,#400D37,#EBF0F2, #F26B8F );
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header{
-    display: flexbox;
     background-color: transparent;
-    justify-content: space-between;
-    font-size: 15px;
 }
-.logo{
-    position: static;
-    font-size: 30px;
+.navList {
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.navList h3{
+    font-size: 25px;
+    margin-left: 10px;
     font-weight: 580;
-    margin: 10px;
-    color: rgb(77, 103, 153);
+    color: #F26B8F;
+    opacity: 0.5;
+}
+.navList ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.navList{
-    display:flex;
-    margin: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    justify-content: space-evenly;
+.navList ul li{
+    margin-right: 30px;
+    align-items: center;
 }
-.navList li a:hover{
-    transition: all .5s ease;
-    border-bottom: 5px solid rgb(255, 0, 0);
+.navList ul li a{
+    text-decoration: none;
+    font-weight:bold;
+    padding: 1px;
+    color: #000;
+}
+.navList ul li a:hover{
+    transition: all .5s;
+    border-bottom: 2px solid #F26B8F;
 }
 .title{
     font-family: "Special Elite", system-ui;
@@ -53,15 +72,13 @@ header{
 }
 .hero{
     display: flex;
-    flex-direction: row;
-    margin: 5px;
-    padding: auto;
-    font-size: 25px;
+    flex-direction: column;
+    margin: 10px;
     justify-content: space-around;
 }
 .section{
     font-weight: 900%;
-    color: black;
+    color: #400D37;
 }
 .skill{
     justify-content: space-between;
@@ -69,9 +86,6 @@ header{
 .img{
     width: 50px;
 }
-
-
-
 
 @media (max-width:992px){
     .hero{
@@ -103,12 +117,15 @@ header{
             }
     .hero{
         display: flex;
-        height: 100%;
+        height: 50px;
         margin: 20px;
         flex-direction: row;
     }
     .navList{
         display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-size: 15px;
     }
     .section{
         font-size: 20px;
