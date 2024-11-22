@@ -73,7 +73,7 @@ header{
 .hero{
     display: flex;
     margin: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .section{
     font-weight: 900%;
